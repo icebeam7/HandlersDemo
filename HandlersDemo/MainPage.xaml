@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HandlersDemo.Controls"
+             BackgroundColor="{StaticResource Primary}"
+             x:Class="HandlersDemo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10">
+            <local:ImageEntry TextColor="{StaticResource Black}" 
+                        PlaceholderColor="{StaticResource White}" 
+                        Image="user" 
+                        Placeholder="Email" 
+                        HorizontalOptions="FillAndExpand"/>
+
+            <local:ImageEntry TextColor="{StaticResource Black}" 
+                    PlaceholderColor="{StaticResource White}"  
+                    Image="password" 
+                    Placeholder="Password" 
+                    HorizontalOptions="FillAndExpand"/>
+
+            <Button HeightRequest="50" 
+                         TextColor="{StaticResource White}" 
+                         Text="Login"  
+                         BackgroundColor="{StaticResource primary}"
+                         HorizontalOptions="FillAndExpand"/>
+
+            <Label  Text="Forgot password" 
+                        HorizontalOptions="Center" 
+                        TextColor="{StaticResource White}"/>
+
+            <Label Margin="0,0,0,20" Text="I don't have an account" VerticalOptions="EndAndExpand"
+                        HorizontalOptions="Center" 
+                        TextColor="{StaticResource White}">
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
