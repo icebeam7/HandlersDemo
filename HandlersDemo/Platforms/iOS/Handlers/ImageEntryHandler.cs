@@ -7,9 +7,9 @@ using Microsoft.Maui.Platform;
 
 using HandlersDemo.Controls;
 
-namespace HandlersDemo.Platforms.iOS.Handlers
+namespace HandlersDemo.Handlers
 {
-    public class ImageEntryRenderer : EntryHandler
+    public class ImageEntryHandler : EntryHandler
     {
         private ImageEntry element;
 

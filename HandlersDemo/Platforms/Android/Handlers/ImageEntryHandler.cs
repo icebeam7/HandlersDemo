@@ -10,7 +10,7 @@ using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 
 using HandlersDemo.Controls;
 
-namespace HandlersDemo.Platforms.Android.Handlers
+namespace HandlersDemo.Handlers
 {
     public class ImageEntryHandler : EntryHandler
     {
