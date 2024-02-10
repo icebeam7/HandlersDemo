@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using HandlersDemo.Controls;
+using HandlersDemo.Handlers;
 
 namespace HandlersDemo
 {
@@ -17,12 +18,7 @@ namespace HandlersDemo
                 })
                 .ConfigureMauiHandlers((handlers) =>
                 {
-#if ANDROID
-                    handlers.AddHandler(typeof(ImageEntry), typeof(Platforms.Android.Handlers.ImageEntryHandler));
-#elif IOS
-                    handlers.AddHandler(typeof(ImageEntry), typeof(Platforms.iOS.Handlers.ImageEntryRenderer));
-
-#endif
+                    handlers.AddHandler(typeof(ImageEntry), typeof(ImageEntryHandler));
                 });
 
 #if DEBUG
